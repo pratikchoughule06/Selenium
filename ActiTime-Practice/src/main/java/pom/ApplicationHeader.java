@@ -6,7 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ApplicationHeader {
-	WebDriver driver;
+	
+	private WebDriver driver;
+	
 	@FindBy (xpath= "(//img[@src='/img/default/pixel.gif?hash=274618146'])[3]")
 	private WebElement TimeTrack;
 	
@@ -47,6 +49,7 @@ public class ApplicationHeader {
 	private WebElement AddOnsIcon;
 	
 	  //Add-Ons Icon Sub Tabs
+	
 	    @FindBy (xpath= "(//li[@class='popup_menu_item'])[6]")
         private WebElement ActiTIMEMobileApp;
     
@@ -87,42 +90,118 @@ public class ApplicationHeader {
     @FindBy (xpath= "//a[@id='logoutLink']")
     private WebElement Logout;
     
+    
+    
     public ApplicationHeader (WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		this.driver= driver;
 	}
     
-//    public void clickApplicationHeader() {
-//    	TimeTrack.click();
-//    	Tasks.click();
-    	public void clickReportPage() { 
-    	Reports.click();
-    	}
-//    	User.click();
-//    	WorkSchedule.click();
-//    	
-//    	SettingIcon.click();
-//    	   CustomizableFeature.click();
-//    	   GeneralSetting.click();
-//    	   TypesOfWork.click();
-//    	   LogoColorScheme.click();
-//    	   Licenses.click();
-//    	   
-//    	AddOnsIcon.click();
-//    	   ActiTIMEMobileApp.click();
-//    	   IntegrationWithQuickBooks.click();
-//    	   ActiPlans.click();
-//    	   
-//    	HelpSupportIcon.click();
-//    	   UserGuide.click();
-//    	   FrequentlyAskedQuestions.click();
-//    	   SendaQuestionToVendor.click();
-//    	   RequestAnAdditionalFeature.click();
-//    	   ReportaBugToVendor.click();
-//    	   AboutActiTIME.click();
-//    	   
-//    	AdministratorSystem.click();
-//    	Logout.click();
-//    }
     
+ 
+    public void clickTimeTrack() {
+    	TimeTrack.click();
+    }
+    
+    public void clickTasks() {
+    	Tasks.click();
+    }
+    
+    public void clickReportPage() { 
+    	Reports.click();
+    }
+    
+    public void clickUser() {
+    	User.click();
+    }
+
+    public void clickWorkSchedule() { 
+        WorkSchedule.click();
+    }
+     	
+    public void clickSettingIcon() {	
+        SettingIcon.click();
+    }
+    
+ //Setting Icon Sub Tabs
+    
+        public void clickCustomizableFeature() {
+    	    CustomizableFeature.click();
+        }
+        
+        public void clickGeneralSetting() {
+     	    GeneralSetting.click();
+        }
+        
+        public void clickTypesOfWork() {
+     	    TypesOfWork.click();
+        }
+        
+        public void clickLogoColorScheme() {
+    	    LogoColorScheme.click();
+        }
+    	   
+        public void clickLicenses() {
+            Licenses.click();
+        }
+    	   
+    public void clickAddOnsIcon() {
+        AddOnsIcon.click();
+    }
+    
+  //Add-Ons Icon Sub Tabs
+    
+        public void clickActiTIMEMobileApp() {
+    	    ActiTIMEMobileApp.click();
+        }
+        
+        public void clickIntegrationWithQuickBooks() {
+    	    IntegrationWithQuickBooks.click();
+        }
+        
+        public void clickActiPlans() {
+    	    ActiPlans.click();
+        }
+
+    public void clickHelpSupportIcon() {
+    	HelpSupportIcon.click();
+    }
+    
+  //Help & Support Icon Sub Tabs
+    
+        public void clickUserGuide() {
+    	    UserGuide.click();
+        }
+        
+        public void clickFrequentlyAskedQuestions() {
+    	    FrequentlyAskedQuestions.click();
+        }
+        
+        public void clickSendaQuestionToVendor() {
+        	SendaQuestionToVendor.click();
+        }
+        
+        public void clickRequestAnAdditionalFeature() {
+    	    RequestAnAdditionalFeature.click();
+        }
+        
+        public void clickReportaBugToVendor() {
+    	    ReportaBugToVendor.click();
+        }
+        
+        public void clickAboutActiTIME() {
+    	    AboutActiTIME.click();
+        }
+    	   
+    public void clickAdministratorSystem() {	
+        AdministratorSystem.click();
+    }
+    
+    public void clickLogout() {
+    	Logout.click();
+    }
 }
+
+
+

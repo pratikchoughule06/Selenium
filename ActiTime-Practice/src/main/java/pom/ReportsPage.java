@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ReportsPage {
+	
+	private WebDriver driver;
 
 	@FindBy (xpath = "//div[@id='ext-gen9']")
 	private WebElement CreateReport;
@@ -22,6 +24,7 @@ public class ReportsPage {
 	public ReportsPage (WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		this.driver= driver;
 	}
 	
 	public void clickonCreateReport() {

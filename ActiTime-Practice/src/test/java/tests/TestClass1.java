@@ -42,8 +42,8 @@ public class TestClass1 {
 		driver.get("http://localhost/login.do");
 		
 		LoginPage loginPage = new LoginPage(driver);
-		loginPage.sendUserName();
-		loginPage.sendPassword();
+		loginPage.sendUserName("admin");
+		loginPage.sendPassword("manager");
 		loginPage.selctKeepMeLogin();
 		loginPage.clickOnLogin();
 		
@@ -54,6 +54,8 @@ public class TestClass1 {
 		reportspage.clickonCreateReport();
 		reportspage.clickonBillingSummary();
 		reportspage.clickonReportParameters();
+		
+		applicationHeader.clickLogout();
 		
 	}
 

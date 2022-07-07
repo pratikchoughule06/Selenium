@@ -6,7 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-	WebDriver driver;
+	
+	private WebDriver driver;
+	
 	@FindBy (xpath= "//input[@name='username']")
 	private WebElement userName;
 	
@@ -22,16 +24,17 @@ public class LoginPage {
 	public LoginPage (WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		this.driver= driver;
 	}
 	
 	//1st Method:
 	
-	public void sendUserName() {
-		userName.sendKeys("admin");	
+	public void sendUserName(String UserID) {
+		userName.sendKeys(UserID);	
 	}
 	
-	public void sendPassword() {
-		password.sendKeys("manager");	
+	public void sendPassword(String Password) {
+		password.sendKeys(Password);	
 	}
 	
 	public void selctKeepMeLogin() {
