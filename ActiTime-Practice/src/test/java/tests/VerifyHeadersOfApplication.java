@@ -104,7 +104,7 @@ public class VerifyHeadersOfApplication {
 		
 		String currentUrl= driver.getCurrentUrl();
 		String expectedUrl= "http://localhost/administration/userlist.do";
-        Assert.assertEquals(currentUrl, expectedUrl, "User Tab Page URL did not matched");
+                Assert.assertEquals(currentUrl, expectedUrl, "User Tab Page URL did not matched");
 		
 		String pageTitle= driver.getTitle();
 		String expectedTitle= "actiTIME - User List";
