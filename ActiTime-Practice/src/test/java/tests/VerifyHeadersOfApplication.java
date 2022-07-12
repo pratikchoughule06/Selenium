@@ -3,35 +3,65 @@ package tests;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import base.Browser;
 import pom.ApplicationHeader;
 import pom.LoginPage;
 
-public class VerifyHeadersOfApplication {
+public class VerifyHeadersOfApplication extends Browser {
 	
 	private WebDriver driver;
 	private LoginPage loginPage;
 	private ApplicationHeader applicationHeader;
+	private SoftAssert softAssert;
+	int testID;
 	
-	@BeforeClass
-	public void launchBrowser() {
+	@BeforeTest
+	@Parameters("browser")
+	public void launchBrowser(String browser) {
 		
-		System.out.println("Launch Browser");
-//		System.setProperty("webdriver.chrome.driver", "A:\\software\\chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+		System.out.println(browser);
+		
+		if (browser.equalsIgnoreCase("Chrome")) {
+			driver= launchChromeBrowser();
+		}
+		
+		if (browser.equalsIgnoreCase("Firefox")) {
+			driver= launchFirefoxBrowser();
+		}
+		
+		if (browser.equalsIgnoreCase("Edge")) {
+			driver= launchEdgeDriver();
+		}
+		
+		if (browser.equalsIgnoreCase("IE")) {
+			driver= launchIEBrowser();
+		}
+		
+		if (browser.equalsIgnoreCase("Safari")) {
+			driver= launchSafariBrowser();
+		}
+	
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+	}
+	
+	@BeforeClass
+	public void createPOMObjects() {
+		loginPage= new LoginPage(driver);
+		applicationHeader= new ApplicationHeader(driver); 
+
 	}
 	
 	@BeforeMethod
@@ -39,18 +69,16 @@ public class VerifyHeadersOfApplication {
 		
 		System.out.println("Login To Application");
 		driver.get("http://localhost/login.do");
-		loginPage= new LoginPage(driver);
 		loginPage.sendUserName("admin");
 		loginPage.sendPassword("manager");
 		loginPage.selctKeepMeLogin();
 		loginPage.clickOnLogin();
 		
-		applicationHeader= new ApplicationHeader(driver); 
 	}
 	
 	@Test (priority= 1)
 	public void toVerifyTimeTrackTab() {
-		
+		testID= 100;
 		System.out.println("To Verify TimeTrack Tab");
 		applicationHeader.clickTimeTrack();
 		
@@ -64,8 +92,8 @@ public class VerifyHeadersOfApplication {
 	
 	@Test (priority= 2)
 	public void toVerifyTaskTab() {
-		
-		SoftAssert softAssert= new SoftAssert();
+		testID= 101;
+		softAssert= new SoftAssert();
 		
 		System.out.println("To Verify Task Tab");
 		applicationHeader.clickTasks();
@@ -82,8 +110,8 @@ public class VerifyHeadersOfApplication {
 	
 	@Test (priority= 3)
 	public void toVerifyReportsTab() {
-		
-		SoftAssert softAssert= new SoftAssert();
+		testID= 103;
+		softAssert= new SoftAssert();
 		
 		System.out.println("To Verify Reports Tab");
 		applicationHeader.clickReportPage();
@@ -98,13 +126,13 @@ public class VerifyHeadersOfApplication {
 	
 	@Test (priority= 4)
 	public void toVerifyUsersTab() {
-		
+		testID= 104;
 		System.out.println("To Verify User Tab");
 		applicationHeader.clickUser();
 		
 		String currentUrl= driver.getCurrentUrl();
 		String expectedUrl= "http://localhost/administration/userlist.do";
-                Assert.assertEquals(currentUrl, expectedUrl, "User Tab Page URL did not matched");
+        Assert.assertEquals(currentUrl, expectedUrl, "User Tab Page URL did not matched");
 		
 		String pageTitle= driver.getTitle();
 		String expectedTitle= "actiTIME - User List";
@@ -114,8 +142,8 @@ public class VerifyHeadersOfApplication {
 	
 	@Test (priority= 5)
 	public void toVerifyWorkSchedule() {
-		
-		SoftAssert softAssert= new SoftAssert();
+		testID=105;
+		softAssert= new SoftAssert();
 		
 		System.out.println("To Verify Work Schedule");
 		applicationHeader.clickWorkSchedule();
@@ -139,9 +167,17 @@ public class VerifyHeadersOfApplication {
 	}
 	
 	@AfterClass
+	public void clearPOMObjects() {
+		loginPage= null;
+		applicationHeader= null;
+	}
+	
+	@AfterTest
 	public void closeBrowser() {
 		System.out.println("Close Browser");
 		driver.quit();
+		driver= null;
+		System.gc();
 	}
 	
 }
