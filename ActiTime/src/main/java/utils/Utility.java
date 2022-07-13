@@ -21,7 +21,7 @@ public class Utility {
         System.out.println(date1);
 		
         File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);		
-		File location = new File("C:\\Users\\Harshad & Pratik\\git\\Selenium\\ActiTime\\FailedTestsScreenShots\\testID"+ testID +date1+ " IST" + ".jpg");	
+		File location = new File("test-output" + File.separator + "FailedTestsScreenShots" + File.separator + "testID_"+ testID +date1+ " IST" + ".jpg");	
 		FileHandler.copy(sourceFile, location);
 	}
 

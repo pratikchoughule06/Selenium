@@ -89,7 +89,7 @@ public class VerifyHeadersOfApplication extends Browser {
 		Assert.assertEquals(currentUrl, "http://localhost/user/submit_tt.do", "Time-Track Page URL does not match" );
 
 		String pageTitle= driver.getTitle();
-		Assert.assertEquals(pageTitle, "actiTIME - Enter Time-Track", "Time-Track Page Title does not match");
+		Assert.assertEquals(pageTitle, "actiTIME - Enter Time-Trac", "Time-Track Page Title does not match");
 
 	}
 	
