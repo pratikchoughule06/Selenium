@@ -1,9 +1,11 @@
 package tests;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -17,6 +19,7 @@ import org.testng.asserts.SoftAssert;
 import base.Browser;
 import pom.ApplicationHeader;
 import pom.LoginPage;
+import utils.Utility;
 
 public class VerifyHeadersOfApplication extends Browser {
 	
@@ -161,7 +164,13 @@ public class VerifyHeadersOfApplication extends Browser {
 	}
 	
 	@AfterMethod
-	public void logoutFromApplication() {
+	public void logoutFromApplication(ITestResult result) throws IOException {
+		
+		if (ITestResult.FAILURE== result.getStatus())
+		{
+			Utility.getScreenShot(driver, testID);
+		}
+		
 		System.out.println("Logout");
 		applicationHeader.clickLogout();
 	}

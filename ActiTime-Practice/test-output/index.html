@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,46 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">30 methods,  6 skipped,  24 passed</span>
+                    <span class="method-stats">18 methods, 3 failed,   15 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.validate" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyReportsTab">toVerifyReportsTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTaskTab">toVerifyTaskTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTimeTrackTab">toVerifyTimeTrackTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyUsersTab">toVerifyUsersTab</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTimeTrackTab">toVerifyTimeTrackTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyWorkSchedule">toVerifyWorkSchedule</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTimeTrackTab">toVerifyTimeTrackTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -158,16 +143,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.validate" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyReportsTab">toVerifyReportsTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyReportsTab">toVerifyReportsTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -198,31 +173,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTaskTab">toVerifyTaskTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTimeTrackTab">toVerifyTimeTrackTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTimeTrackTab">toVerifyTimeTrackTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTimeTrackTab">toVerifyTimeTrackTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyTimeTrackTab">toVerifyTimeTrackTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyUsersTab">toVerifyUsersTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -234,16 +184,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyUsersTab">toVerifyUsersTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyUsersTab">toVerifyUsersTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.VerifyHeadersOfApplication" class="method navigator-link" hash-for-method="toVerifyWorkSchedule">toVerifyWorkSchedule</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -273,31 +213,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.VerifyHeadersOfApplication</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="toVerifyReportsTab">
-                  </a> <!-- toVerifyReportsTab -->
-                  <span class="method-name">toVerifyReportsTab</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at tests.VerifyHeadersOfApplication.launchBrowser(VerifyHeadersOfApplication.java:55)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyTaskTab">
-                  </a> <!-- toVerifyTaskTab -->
-                  <span class="method-name">toVerifyTaskTab</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at tests.VerifyHeadersOfApplication.launchBrowser(VerifyHeadersOfApplication.java:55)
-... Removed 24 stack frames
+                  <a name="toVerifyTimeTrackTab">
+                  </a> <!-- toVerifyTimeTrackTab -->
+                  <span class="method-name">toVerifyTimeTrackTab</span>
+                  <div class="stack-trace">java.lang.AssertionError: Time-Track Page Title does not match expected [actiTIME - Enter Time-Trac] but found [actiTIME - Enter Time-Track]
+	at tests.VerifyHeadersOfApplication.toVerifyTimeTrackTab(VerifyHeadersOfApplication.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -306,55 +236,27 @@
                   <a name="toVerifyTimeTrackTab">
                   </a> <!-- toVerifyTimeTrackTab -->
                   <span class="method-name">toVerifyTimeTrackTab</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at tests.VerifyHeadersOfApplication.launchBrowser(VerifyHeadersOfApplication.java:55)
-... Removed 24 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: Time-Track Page Title does not match expected [actiTIME - Enter Time-Trac] but found [actiTIME - Enter Time-Track]
+	at tests.VerifyHeadersOfApplication.toVerifyTimeTrackTab(VerifyHeadersOfApplication.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="toVerifyUsersTab">
-                  </a> <!-- toVerifyUsersTab -->
-                  <span class="method-name">toVerifyUsersTab</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at tests.VerifyHeadersOfApplication.launchBrowser(VerifyHeadersOfApplication.java:55)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyWorkSchedule">
-                  </a> <!-- toVerifyWorkSchedule -->
-                  <span class="method-name">toVerifyWorkSchedule</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at tests.VerifyHeadersOfApplication.launchBrowser(VerifyHeadersOfApplication.java:55)
-... Removed 24 stack frames
+                  <a name="toVerifyTimeTrackTab">
+                  </a> <!-- toVerifyTimeTrackTab -->
+                  <span class="method-name">toVerifyTimeTrackTab</span>
+                  <div class="stack-trace">java.lang.AssertionError: Time-Track Page Title does not match expected [actiTIME - Enter Time-Trac] but found [actiTIME - Enter Time-Track]
+	at tests.VerifyHeadersOfApplication.toVerifyTimeTrackTab(VerifyHeadersOfApplication.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">tests.validate</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
-	at tests.VerifyHeadersOfApplication.launchBrowser(VerifyHeadersOfApplication.java:55)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -384,13 +286,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="toVerifyReportsTab">
-                  </a> <!-- toVerifyReportsTab -->
-                  <span class="method-name">toVerifyReportsTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="toVerifyTaskTab">
                   </a> <!-- toVerifyTaskTab -->
                   <span class="method-name">toVerifyTaskTab</span>
@@ -412,41 +307,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="toVerifyTaskTab">
-                  </a> <!-- toVerifyTaskTab -->
-                  <span class="method-name">toVerifyTaskTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyTimeTrackTab">
-                  </a> <!-- toVerifyTimeTrackTab -->
-                  <span class="method-name">toVerifyTimeTrackTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyTimeTrackTab">
-                  </a> <!-- toVerifyTimeTrackTab -->
-                  <span class="method-name">toVerifyTimeTrackTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyTimeTrackTab">
-                  </a> <!-- toVerifyTimeTrackTab -->
-                  <span class="method-name">toVerifyTimeTrackTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyTimeTrackTab">
-                  </a> <!-- toVerifyTimeTrackTab -->
-                  <span class="method-name">toVerifyTimeTrackTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="toVerifyUsersTab">
                   </a> <!-- toVerifyUsersTab -->
                   <span class="method-name">toVerifyUsersTab</span>
@@ -464,20 +324,6 @@
                   <a name="toVerifyUsersTab">
                   </a> <!-- toVerifyUsersTab -->
                   <span class="method-name">toVerifyUsersTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyUsersTab">
-                  </a> <!-- toVerifyUsersTab -->
-                  <span class="method-name">toVerifyUsersTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toVerifyWorkSchedule">
-                  </a> <!-- toVerifyWorkSchedule -->
-                  <span class="method-name">toVerifyWorkSchedule</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -509,13 +355,6 @@
               <span class="class-name">tests.validate</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="test1">
@@ -570,20 +409,6 @@
       &lt;class name=&quot;tests.VerifyHeadersOfApplication&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MSEdgeTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;OperaTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Opera&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.validate&quot;/&gt;
-      &lt;class name=&quot;tests.VerifyHeadersOfApplication&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- OperaTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;IETest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;IE&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.validate&quot;/&gt;
-      &lt;class name=&quot;tests.VerifyHeadersOfApplication&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- IETest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -602,12 +427,6 @@
               </li>
               <li>
                 <span class="test-name">MSEdgeTest (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">OperaTest (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">IETest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -633,132 +452,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(30);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'toVerifyUsersTab')
+data.setCell(0, 1, 'toVerifyTimeTrackTab')
 data.setCell(0, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(0, 3, 4867);
+data.setCell(0, 3, 5137);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'toVerifyTimeTrackTab')
+data.setCell(1, 1, 'toVerifyUsersTab')
 data.setCell(1, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(1, 3, 3221);
+data.setCell(1, 3, 3884);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'toVerifyUsersTab')
 data.setCell(2, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(2, 3, 3061);
+data.setCell(2, 3, 2499);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'toVerifyUsersTab')
+data.setCell(3, 1, 'toVerifyTimeTrackTab')
 data.setCell(3, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(3, 3, 1909);
+data.setCell(3, 3, 2321);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'toVerifyTimeTrackTab')
+data.setCell(4, 1, 'toVerifyTaskTab')
 data.setCell(4, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(4, 3, 1736);
+data.setCell(4, 3, 1497);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'toVerifyTaskTab')
+data.setCell(5, 1, 'toVerifyReportsTab')
 data.setCell(5, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(5, 3, 1715);
+data.setCell(5, 3, 908);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'toVerifyWorkSchedule')
+data.setCell(6, 1, 'toVerifyTaskTab')
 data.setCell(6, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(6, 3, 1635);
+data.setCell(6, 3, 905);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'toVerifyTaskTab')
+data.setCell(7, 1, 'toVerifyUsersTab')
 data.setCell(7, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(7, 3, 1438);
+data.setCell(7, 3, 885);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'toVerifyReportsTab')
 data.setCell(8, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(8, 3, 1201);
+data.setCell(8, 3, 856);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'toVerifyUsersTab')
+data.setCell(9, 1, 'toVerifyTaskTab')
 data.setCell(9, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(9, 3, 965);
+data.setCell(9, 3, 839);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'toVerifyTimeTrackTab')
+data.setCell(10, 1, 'toVerifyWorkSchedule')
 data.setCell(10, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(10, 3, 871);
+data.setCell(10, 3, 698);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'toVerifyReportsTab')
 data.setCell(11, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(11, 3, 852);
+data.setCell(11, 3, 638);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'toVerifyTaskTab')
+data.setCell(12, 1, 'toVerifyWorkSchedule')
 data.setCell(12, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(12, 3, 815);
+data.setCell(12, 3, 471);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'toVerifyWorkSchedule')
+data.setCell(13, 1, 'toVerifyTimeTrackTab')
 data.setCell(13, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(13, 3, 801);
+data.setCell(13, 3, 233);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'toVerifyTaskTab')
+data.setCell(14, 1, 'toVerifyWorkSchedule')
 data.setCell(14, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(14, 3, 792);
+data.setCell(14, 3, 200);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'toVerifyReportsTab')
-data.setCell(15, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(15, 3, 728);
+data.setCell(15, 1, 'test1')
+data.setCell(15, 2, 'tests.validate')
+data.setCell(15, 3, 6);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'toVerifyWorkSchedule')
-data.setCell(16, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(16, 3, 684);
+data.setCell(16, 1, 'test1')
+data.setCell(16, 2, 'tests.validate')
+data.setCell(16, 3, 1);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'toVerifyReportsTab')
-data.setCell(17, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(17, 3, 387);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'toVerifyTimeTrackTab')
-data.setCell(18, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(18, 3, 228);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'toVerifyWorkSchedule')
-data.setCell(19, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(19, 3, 205);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'test1')
-data.setCell(20, 2, 'tests.validate')
-data.setCell(20, 3, 6);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'test1')
-data.setCell(21, 2, 'tests.validate')
-data.setCell(21, 3, 2);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'test1')
-data.setCell(22, 2, 'tests.validate')
-data.setCell(22, 3, 1);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'test1')
-data.setCell(23, 2, 'tests.validate')
-data.setCell(23, 3, 0);
-data.setCell(24, 0, 24)
-data.setCell(24, 1, 'test1')
-data.setCell(24, 2, 'tests.validate')
-data.setCell(24, 3, 0);
-data.setCell(25, 0, 25)
-data.setCell(25, 1, 'toVerifyReportsTab')
-data.setCell(25, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(25, 3, 0);
-data.setCell(26, 0, 26)
-data.setCell(26, 1, 'toVerifyTimeTrackTab')
-data.setCell(26, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(26, 3, 0);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'toVerifyWorkSchedule')
-data.setCell(27, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(27, 3, 0);
-data.setCell(28, 0, 28)
-data.setCell(28, 1, 'toVerifyTaskTab')
-data.setCell(28, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(28, 3, 0);
-data.setCell(29, 0, 29)
-data.setCell(29, 1, 'toVerifyUsersTab')
-data.setCell(29, 2, 'tests.VerifyHeadersOfApplication')
-data.setCell(29, 3, 0);
+data.setCell(17, 1, 'test1')
+data.setCell(17, 2, 'tests.validate')
+data.setCell(17, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -794,520 +565,314 @@ return data;
               <div class="chronological-class-name">tests.validate</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">2292 ms</span>
+                <span class="method-start">2334 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">2301 ms</span>
+                <span class="method-start">2343 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">2302 ms</span>
+                <span class="method-start">2344 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">2311 ms</span>
+                <span class="method-start">2352 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">2313 ms</span>
+                <span class="method-start">2354 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyHeadersOfApplication</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">2315 ms</span>
+                <span class="method-start">2356 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">2345 ms</span>
+                <span class="method-start">2389 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">toVerifyTimeTrackTab</span>
-                <span class="method-start">4740 ms</span>
+                <span class="method-start">5339 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">7962 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyTimeTrackTab status=FAILURE method=VerifyHeadersOfApplication.toVerifyTimeT...)</span>
+                <span class="method-start">7665 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">8098 ms</span>
+                <span class="method-start">8002 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyTaskTab</span>
-                <span class="method-start">8380 ms</span>
+                <span class="method-start">8276 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">9196 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyTaskTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyTaskTab()[...)</span>
+                <span class="method-start">9116 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">9501 ms</span>
+                <span class="method-start">9352 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyReportsTab</span>
-                <span class="method-start">9796 ms</span>
+                <span class="method-start">9633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">10525 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyReportsTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyReports...)</span>
+                <span class="method-start">10542 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">10926 ms</span>
+                <span class="method-start">10660 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyUsersTab</span>
-                <span class="method-start">11208 ms</span>
+                <span class="method-start">10937 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">13118 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyUsersTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyUsersTab(...)</span>
+                <span class="method-start">14822 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">13243 ms</span>
+                <span class="method-start">14967 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyWorkSchedule</span>
-                <span class="method-start">13534 ms</span>
+                <span class="method-start">15253 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">14219 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyWorkSchedule status=SUCCESS method=VerifyHeadersOfApplication.toVerifyWorkS...)</span>
+                <span class="method-start">15725 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearPOMObjects</span>
-                <span class="method-start">14351 ms</span>
+                <span class="method-start">15864 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">14352 ms</span>
+                <span class="method-start">15865 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Firefox)</span>
-                <span class="method-start">14619 ms</span>
+                <span class="method-start">16181 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.validate</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">19968 ms</span>
+                <span class="method-start">22708 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">19969 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">19969 ms</span>
+                <span class="method-start">22709 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">22709 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">19972 ms</span>
+                <span class="method-start">22711 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">19973 ms</span>
+                <span class="method-start">22712 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyHeadersOfApplication</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">19974 ms</span>
+                <span class="method-start">22713 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">19976 ms</span>
+                <span class="method-start">22715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">toVerifyTimeTrackTab</span>
-                <span class="method-start">21684 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">21913 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">22106 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyTaskTab</span>
-                <span class="method-start">23122 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">23915 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">24040 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyReportsTab</span>
-                <span class="method-start">24904 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">25292 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">25434 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyUsersTab</span>
-                <span class="method-start">26284 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">27250 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">27376 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyWorkSchedule</span>
-                <span class="method-start">28209 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">28415 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">28547 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearPOMObjects</span>
-                <span class="method-start">28547 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-test before">
-                <span class="method-name">launchBrowser(Edge)</span>
-                <span class="method-start">30647 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.validate</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">31916 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">31917 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">31917 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">31918 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyHeadersOfApplication</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">31919 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.validate</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">31919 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyHeadersOfApplication</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">31921 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyTimeTrackTab</span>
-                <span class="method-start">34797 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">36533 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">36685 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyTaskTab</span>
-                <span class="method-start">36974 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">38690 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">39009 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyReportsTab</span>
-                <span class="method-start">39329 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">40182 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">40403 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyUsersTab</span>
-                <span class="method-start">40713 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">45581 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">46060 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">toVerifyWorkSchedule</span>
-                <span class="method-start">46378 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">47180 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearPOMObjects</span>
-                <span class="method-start">47317 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">47318 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">launchBrowser(Opera)</span>
-                <span class="method-start">47666 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.validate</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">47671 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">47672 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">47674 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">47676 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">47677 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.VerifyHeadersOfApplication</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">47678 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
                 <span class="method-name">toVerifyTimeTrackTab</span>
-                <span class="method-start">47680 ms</span>
+                <span class="method-start">24405 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">47680 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">47682 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyTimeTrackTab status=FAILURE method=VerifyHeadersOfApplication.toVerifyTimeT...)</span>
+                <span class="method-start">24640 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">47683 ms</span>
+                <span class="method-start">24917 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyTaskTab</span>
-                <span class="method-start">47684 ms</span>
+                <span class="method-start">25722 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">47686 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyTaskTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyTaskTab()[...)</span>
+                <span class="method-start">26628 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">47688 ms</span>
+                <span class="method-start">26771 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyReportsTab</span>
-                <span class="method-start">47689 ms</span>
+                <span class="method-start">27656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">47692 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyReportsTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyReports...)</span>
+                <span class="method-start">28295 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">47693 ms</span>
+                <span class="method-start">28434 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyUsersTab</span>
-                <span class="method-start">47694 ms</span>
+                <span class="method-start">29276 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">47695 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyUsersTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyUsersTab(...)</span>
+                <span class="method-start">30162 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">47697 ms</span>
+                <span class="method-start">30292 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyWorkSchedule</span>
-                <span class="method-start">47698 ms</span>
+                <span class="method-start">31118 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">47699 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyWorkSchedule status=SUCCESS method=VerifyHeadersOfApplication.toVerifyWorkS...)</span>
+                <span class="method-start">31319 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearPOMObjects</span>
-                <span class="method-start">47701 ms</span>
+                <span class="method-start">31444 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">47702 ms</span>
+                <span class="method-start">31445 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">launchBrowser(IE)</span>
-                <span class="method-start">47725 ms</span>
+                <span class="method-name">launchBrowser(Edge)</span>
+                <span class="method-start">34021 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.validate</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">50806 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">50806 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">50806 ms</span>
+                <span class="method-start">36912 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">36913 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">36913 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">50807 ms</span>
+                <span class="method-start">36914 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyHeadersOfApplication</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">50808 ms</span>
+                <span class="method-start">36915 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.validate</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">50808 ms</span>
+                <span class="method-start">36915 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.VerifyHeadersOfApplication</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">50809 ms</span>
+                <span class="method-start">36917 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">toVerifyTimeTrackTab</span>
-                <span class="method-start">115299 ms</span>
+                <span class="method-start">40462 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">116170 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyTimeTrackTab status=FAILURE method=VerifyHeadersOfApplication.toVerifyTimeT...)</span>
+                <span class="method-start">45600 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">117261 ms</span>
+                <span class="method-start">46067 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyTaskTab</span>
-                <span class="method-start">181589 ms</span>
+                <span class="method-start">46389 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">183028 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyTaskTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyTaskTab()[...)</span>
+                <span class="method-start">47887 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">184069 ms</span>
+                <span class="method-start">48409 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyReportsTab</span>
-                <span class="method-start">248325 ms</span>
+                <span class="method-start">48743 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">249527 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyReportsTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyReports...)</span>
+                <span class="method-start">49600 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">250619 ms</span>
+                <span class="method-start">49815 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyUsersTab</span>
-                <span class="method-start">317290 ms</span>
+                <span class="method-start">50136 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">320352 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyUsersTab status=SUCCESS method=VerifyHeadersOfApplication.toVerifyUsersTab(...)</span>
+                <span class="method-start">52636 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">321446 ms</span>
+                <span class="method-start">52882 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyWorkSchedule</span>
-                <span class="method-start">385845 ms</span>
+                <span class="method-start">53203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">387481 ms</span>
+                <span class="method-name">logoutFromApplication([TestResult name=toVerifyWorkSchedule status=SUCCESS method=VerifyHeadersOfApplication.toVerifyWorkS...)</span>
+                <span class="method-start">53903 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearPOMObjects</span>
-                <span class="method-start">388541 ms</span>
+                <span class="method-start">54115 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">388541 ms</span>
+                <span class="method-start">54116 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

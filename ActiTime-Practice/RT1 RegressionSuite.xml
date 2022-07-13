@@ -27,20 +27,4 @@
     </classes>
   </test> <!-- Test -->
 
-<test thread-count="5" name="OperaTest">
-  <parameter name="browser" value="Opera"></parameter>
-    <classes>
-      <class name="tests.validate"/>
-      <class name="tests.VerifyHeadersOfApplication"/>
-    </classes>
-  </test> <!-- Test -->
-
-<test thread-count="5" name="IETest">
-  <parameter name="browser" value="IE"></parameter>
-    <classes>
-      <class name="tests.validate"/>
-      <class name="tests.VerifyHeadersOfApplication"/>
-    </classes>
-  </test> <!-- Test -->
-
 </suite> <!-- Suite -->
