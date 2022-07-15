@@ -16,9 +16,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import base.Browser;
 import pom.ApplicationHeader;
 import pom.LoginPage;
+import testBrowserSetup.Browser;
 import utils.Utility;
 
 public class VerifyHeadersOfApplication extends Browser {
@@ -68,12 +68,14 @@ public class VerifyHeadersOfApplication extends Browser {
 	}
 	
 	@BeforeMethod
-	public void loginToApplication() {
+	public void loginToApplication() throws IOException {
 		
 		System.out.println("Login To Application");
 		driver.get("http://localhost/login.do");
-		loginPage.sendUserName("admin");
-		loginPage.sendPassword("manager");
+		String username= Utility.getDataFromExcel(driver, "Username");
+		loginPage.sendUserName(username);
+		String password= Utility.getDataFromExcel(driver, "Password");
+		loginPage.sendPassword(password);
 		loginPage.selctKeepMeLogin();
 		loginPage.clickOnLogin();
 		

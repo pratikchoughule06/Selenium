@@ -1,4 +1,4 @@
-package base;
+package testBrowserSetup;
 
 import java.io.File;
 
